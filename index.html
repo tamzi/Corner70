@@ -13,19 +13,20 @@
           <div class="col-md-12">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="container-fluid">
-                <a class="navbar-brand" href="login.html">login</a>
+                <a class="navbar-brand" href="index.html">login</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
-      
+                    <li class="nav-item">
+                      <a class="nav-link" href="statements.html">statements</a>
+                    </li>
+
                     <li class="nav-item">
                       <a class="nav-link" href="contribution.html">contribution</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="statements.html">statements</a>
-                      </li>
+
                       <li class="nav-item">
                         <a class="nav-link" href="logout.html">logout</a>
                       </li>
@@ -36,6 +37,72 @@
             </nav>
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <h1>Corner 70  </h1>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+        <form>
+                 <div class="row">
+                     <div class="col-md-2"></div>
+                     <div class="col-md-8">
+                       <br>
+                         <label for="username" for="form6Example6">username</label>
+                         <input name="username" type="text" id="myInput1" class="form-control" placeholder="input username" required/>
+                       </div>
+                       <div class="col-md-2"></div>
+                     </div>
+                     <div class="row"> 
+                         <div class="col-md-2"></div>
+                         <div class="col-md-8">
+                           <br>
+                             <label for="password" for="form6Example6">password</label>
+                             <input name="password" type="password" id="pass" class="form-control" placeholder="input password" required/>
+                           </div>
+                           <div class="col-md-2"></div>
+                         </div>
+                         <br>
+                        <div class="row">
+                          <div class="col-md-2"></div>
+                         <div  class="col-md-2">
+                           <h6>
+                             <a class="btn btn-danger" href="forgot_password.html" role="button">Forgot password</a>
+                           </P>
+                         </div>
+                         <div  class="col-md-4">
+                           
+ 
+                           
+                         </div>
+                         <div  class="col-md-4">
+                           <input class="btn btn-success" id="mybtn" type="button"onclick="check(this.form)" value="Login">
+                           
+                         </div>
+                    </div>
+         </div>
+     </form>
+ </div>
+ <script language="javascript">
+ function check(form){
+   if(form.username.value == "corner70" && form.password.value == "password"){
+     window.open('file:///home/malli/Django_practice/corner70try/statements.html')
+     }
+   else{
+     alert("Username or password is incorrect")
+   }
+ }
+  var input = document.getElementById("myInput1");
+                             input.addEventListener("keyup", function(event) {
+                               if (event.keyCode === 13) {
+                                event.preventDefault();
+                                event.stopImmediatePropagation();
+ 
+                                document.getElementById("mybtn").click();
+                               }
+                             });
+ </script>
     </div>
     
 </body>

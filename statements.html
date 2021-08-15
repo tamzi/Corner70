@@ -8,22 +8,25 @@
 </head>
 <body>
     <div class="container">
+      <div id="hero">
         <div class="row">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <div class="col-md-12">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="container-fluid">
-                <a class="navbar-brand" href="statements.html">statements</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
-      
+                    <li class="nav-item">
+                      <a class="nav-link " href="index.html">login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="navbar-brand" href="statements.html">statements</a>
+                    </li>
+
                     <li class="nav-item">
                       <a class="nav-link" href="contribution.html">contribution</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">login</a>
-                      </li>
+
                       <li class="nav-item">
                         <a class="nav-link" href="logout.html">logout</a>
                       </li>
@@ -33,7 +36,77 @@
               </div>
             </nav>
           </div>
-    </div>
-    
+        </div>
+        </div>
+    <!-- <div class="row">
+      <div id="shares"></div>
+  </div>
+  <div class="row">
+      <div id="expected"></div>
+  </div>
+  <div class="row">
+      <div id="arreas"></div>
+  </div>
+  <div class="row">
+      <div id="fines"></div>
+  </div>
+  <div class="row">
+      <div id="exces"></div>
+  </div> -->
+  
+</body>
+<!-- <script>
+  nav = document.getElementById("hero")
+var d = new Date();
+year1 = d.getFullYear();
+month2 = d.getMonth() + 1;
+year2 = 2014;
+month1 = 12;
+if (month1 > month2){
+  lol5 = year1 - 1;
+  lol6 = month2 + 12;
+  calc1 = lol5 - year2;
+  calc2 = lol6 - month1;
+  monthtotal = calc1 * 12 + calc2;
+  calculation = monthtotal * 1000
+} else{
+  lol7 = year1 - year2;
+  lol8 = month2 - month1;
+  monthtotal = lol7 * 12 + lol8;
+  calculation = monthtotal * 1000
+}
+let errorMessageElm = document.getElementById("errorMessage")
+function setErrorDisplay(){
+  loaderElm.style.display = "none"
+  errorMessageElm.style.display = "block"
+}
+fetch("https://api.apispreadsheets.com/data/16292/").then(res=>{
+  if (res.status === 200){
+      res.json().then(data=>{
+          const yourData = data["data"]
+          for(let i = 3; i < 4; i++){
+              let rowInfo = yourData[i]
+              rowSharesNode = rowInfo["Shares"]
+              document.getElementById("shares").innerHTML = document.write("Your shares are: Kes ",rowSharesNode,".")
+              document.getElementById("expected").innerHTML = document.write( "Expected by: ksh ", calculation)
+              document.getElementById("arreas").innerHTML = document.write("Arreas: ksh ", rowSharesNode - calculation)
+              // document.getElementById('fines').innerHTML = "Fines: ksh "
+              // document.getElementById('exces').innerHTML = "Excess: ksh "
+          }
+          loaderElm.style.display = "none"
+          noElm.style.display = "block"
+          nav.style.display="block"
+          errorMessageElm.style.display = "none"
+      }).catch(err => {
+          setErrorDisplay()
+      })
+  }
+  else{
+      setErrorDisplay()
+  }
+}).catch(err =>{
+  setErrorDisplay()
+})
+</script> -->
 </body>
 </html>
