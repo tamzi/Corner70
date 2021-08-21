@@ -1,49 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>login</title>
-    <link href="login.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
+
         <div class="row">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <div class="col-md-12">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">login</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="statements.html">statements</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="contribution.html">contribution</a>
-                    </li>
-
-                      <li class="nav-item">
-                        <a class="nav-link" href="logout.html">logout</a>
-                      </li>
-
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-        <div class="row">
+          <br>
+          <br>
           <div class="col-md-4"></div>
           <div class="col-md-4">
             <h1>Corner 70  </h1>
           </div>
           <div class="col-md-4"></div>
         </div>
+
+        <br>
         <form>
                  <div class="row">
                      <div class="col-md-2"></div>
@@ -57,6 +35,7 @@
                      <div class="row"> 
                          <div class="col-md-2"></div>
                          <div class="col-md-8">
+                           
                            <br>
                              <label for="password" for="form6Example6">password</label>
                              <input name="password" type="password" id="pass" class="form-control" placeholder="input password" required/>
@@ -66,28 +45,29 @@
                          <br>
                         <div class="row">
                           <div class="col-md-2"></div>
-                         <div  class="col-md-2">
-                           <h6>
-                             <a class="btn btn-danger" href="forgot_password.html" role="button">Forgot password</a>
-                           </P>
-                         </div>
-                         <div  class="col-md-4">
-                           
- 
-                           
-                         </div>
-                         <div  class="col-md-4">
-                           <input class="btn btn-success" id="mybtn" type="button"onclick="check(this.form)" value="Login">
-                           
-                         </div>
-                    </div>
+                          <div class="col-md-8">
+                            <div class="d-grid gap-2 d-md-block">
+                              <a class="btn btn-danger" href="forgot_password.html" role="button">forgot password</a>
+                              <input class="btn btn-success" id="mybtn" type="button"onclick="check(this.form)" value="Login">
+  
+                             
+                            </div>
+
+                          </div>
+                          <div class="col-md-2"></div>
+           
+
+                       
+                             </div>
+
+                         
          </div>
      </form>
  </div>
  <script language="javascript">
  function check(form){
    if(form.username.value == "corner70" && form.password.value == "password"){
-     window.open('file:///home/malli/Django_practice/corner70try/statements.html')
+     window.open('file:///home/malli/Django_practice/corner70try/statements2.html')
      }
    else{
      alert("Username or password is incorrect")
